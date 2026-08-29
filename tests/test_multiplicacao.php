@@ -1,12 +1,12 @@
 <?php
 
-require_once 'multiplicacao.php';
+require_once __DIR__ . '/../multiplicacao.php';
 
 use PHPUnit\Framework\TestCase;
 
-class MultiplicacaoTest extends TestCase
+final class test_multiplicacao extends TestCase
 {
-    public function testMultiplicacao()
+    public function testMultiplicacao(): void
     {
         $resultado = multiplicacao(10, 5);
 

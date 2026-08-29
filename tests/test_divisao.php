@@ -1,19 +1,19 @@
 <?php
 
-require_once 'divisao.php';
+require_once __DIR__ . '/../divisao.php';
 
 use PHPUnit\Framework\TestCase;
 
-class DivisaoTest extends TestCase
+final class test_divisao extends TestCase
 {
-    public function testDivisao()
+    public function testDivisao(): void
     {
         $resultado = divisao(10, 5);
 
         $this->assertEquals(2, $resultado);
     }
 
-    public function testDivisaoPorZero()
+    public function testDivisaoPorZero(): void
     {
         $this->expectException(InvalidArgumentException::class);
 

@@ -1,12 +1,12 @@
 <?php
 
-require_once 'soma.php';
+require_once __DIR__ . '/../soma.php';
 
 use PHPUnit\Framework\TestCase;
 
-class SomaTest extends TestCase
+final class test_soma extends TestCase
 {
-    public function testSoma()
+    public function testSoma(): void
     {
         $resultado = soma(10, 5);
 

@@ -1,12 +1,12 @@
 <?php
 
-require_once 'menos.php';
+require_once __DIR__ . '/../menos.php';
 
 use PHPUnit\Framework\TestCase;
 
-class MenosTest extends TestCase
+final class test_menos extends TestCase
 {
-    public function testMenos()
+    public function testMenos(): void
     {
         $resultado = menos(10, 5);
 
