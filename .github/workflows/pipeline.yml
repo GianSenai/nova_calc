@@ -23,3 +23,12 @@ jobs:
 
       - name: Executar teste soma
         run: ./vendor/bin/phpunit test_soma.php
+
+      - name: Executar teste menos
+        run: ./vendor/bin/phpunit test_menos.php
+
+      - name: Executar teste multiplicação
+        run: ./vendor/bin/phpunit test_multiplicacao.php
+
+      - name: Executar teste divisão
+        run: ./vendor/bin/phpunit test_divisao.php
