@@ -1,6 +1,6 @@
 <?php
 
-function sub($a, $b)
+function menos($a, $b)
 {
     return $a - $b;
 }
