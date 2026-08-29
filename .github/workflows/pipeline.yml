@@ -16,9 +16,10 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.3'
+          tools: composer
 
-      - name: Instalar PHPUnit
-        run: composer install
+      - name: Instalar dependências do Composer
+        run: composer install --no-interaction --prefer-dist
 
       - name: Executar teste soma
         run: ./vendor/bin/phpunit test_soma.php
