@@ -1,24 +1,16 @@
-name: Testes da Calculadora
-
 on:
   push:
     branches: [main]
 
 jobs:
-  teste:
+  testes:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Baixar código do repositório
+      - name: Baixar código
         uses: actions/checkout@v4
 
-      - name: Configurar Python
-        uses: actions/setup-python@v5
+      - name: Configurar PHP
+        uses: shivammathur/setup-php@v2
         with:
-          python-version: '3.12'
-
-      - name: Instalar pytest
-        run: pip install pytest
-
-      - name: Executar testes
-        run: pytest 
+          php-version: '8.3'
