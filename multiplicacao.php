@@ -1,6 +1,6 @@
 <?php
 
-function mult($a, $b)
+function multiplicacao($a, $b)
 {
     return $a * $b;
 }
