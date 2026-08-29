@@ -31,13 +31,13 @@ jobs:
         run: php vendor/bin/phpunit --version
 
       - name: Executar teste soma
-        run: php vendor/bin/phpunit test_soma.php
+        run: php vendor/bin/phpunit tests/test_soma.php
 
       - name: Executar teste menos
-        run: php vendor/bin/phpunit test_menos.php
+        run: php vendor/bin/phpunit tests/test_menos.php
 
       - name: Executar teste multiplicação
-        run: php vendor/bin/phpunit test_multiplicacao.php
+        run: php vendor/bin/phpunit tests/test_multiplicacao.php
 
       - name: Executar teste divisão
-        run: php vendor/bin/phpunit test_divisao.php
+        run: php vendor/bin/phpunit tests/test_divisao.php
