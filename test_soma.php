@@ -1,6 +1,15 @@
 <?php
-$a = 3;
-$b = 7;
-function soma($a, $b) {
-    return $a + $b;
+
+require_once 'soma.php';
+
+use PHPUnit\Framework\TestCase;
+
+class SomaTest extends TestCase
+{
+    public function testSoma()
+    {
+        $resultado = soma(10, 5);
+
+        $this->assertEquals(15, $resultado);
+    }
 }
