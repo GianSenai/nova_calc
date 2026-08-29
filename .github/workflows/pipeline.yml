@@ -18,17 +18,26 @@ jobs:
           php-version: '8.3'
           tools: composer
 
-      - name: Instalar dependências do Composer
+      - name: Verificar PHP
+        run: php --version
+
+      - name: Verificar Composer
+        run: composer --version
+
+      - name: Instalar dependências
         run: composer install --no-interaction --prefer-dist
 
+      - name: Verificar PHPUnit
+        run: php vendor/bin/phpunit --version
+
       - name: Executar teste soma
-        run: ./vendor/bin/phpunit test_soma.php
+        run: php vendor/bin/phpunit test_soma.php
 
       - name: Executar teste menos
-        run: ./vendor/bin/phpunit test_menos.php
+        run: php vendor/bin/phpunit test_menos.php
 
       - name: Executar teste multiplicação
-        run: ./vendor/bin/phpunit test_multiplicacao.php
+        run: php vendor/bin/phpunit test_multiplicacao.php
 
       - name: Executar teste divisão
-        run: ./vendor/bin/phpunit test_divisao.php
+        run: php vendor/bin/phpunit test_divisao.php
