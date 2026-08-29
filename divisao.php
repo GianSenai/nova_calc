@@ -1,6 +1,6 @@
 <?php
 
-function div($a, $b)
+function divisao($a, $b)
 {
     return $a / $b;
 }
