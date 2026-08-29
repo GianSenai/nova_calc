@@ -14,3 +14,8 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.3'
+      - name: Instalar PHPUnit
+        run: composer install
+
+      - name: executar o teste de soma
+        run: pytest test_soma.py
