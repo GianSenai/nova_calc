@@ -17,5 +17,5 @@ jobs:
       - name: Instalar PHPUnit
         run: composer install
 
-      - name: executar o teste de soma
-        run: pytest test_soma.py
+      - name: Executar teste soma
+        run: ./vendor/bin/phpunit tests/test_soma.php
